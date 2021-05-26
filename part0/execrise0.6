@@ -1,0 +1,17 @@
+title Excerise0.6
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser:HTML-code
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_/JSON-data
+Server->Browser:The server responds with status code 201 created
+note over Browser:
+The SPA version of the app does not send 
+the form data in the 
+traditional way, but instead 
+uses the JavaScript code it fetched 
+from the server.
+end note
+note over Browser:
+The default method would send the data to the server and 
+cause a new GET request, which we don't want to happen.
+end note
+Server->Browser:HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note/JSON-string
