@@ -1,0 +1,10 @@
+  
+import React from 'react'
+const Filter=({onChange})=>{
+    return(
+    <div>
+     filter shown with &nbsp;<input onChange={onChange} /> 
+    </div>
+    )
+}
+export default Filter
