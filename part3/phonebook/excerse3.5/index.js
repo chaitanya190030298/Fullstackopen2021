@@ -48,9 +48,9 @@ let persons = [
     {
       body.id = Math.floor(Math.random() *9999999)
       const person={
-        "content":body.id,
-        "number":body.name,
-        "id":body.number
+        "id":body.id,
+        "name":body.name,
+        "number":body.number
       }
       persons.concat(person)
       response.status(201).json(person)
