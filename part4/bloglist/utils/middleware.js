@@ -60,4 +60,3 @@ module.exports = {
   tokenExtractor,
   userExtractor,
 }
-© 2021 GitHub, Inc.
